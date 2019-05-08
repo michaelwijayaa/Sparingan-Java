@@ -5,14 +5,13 @@ public class Schedule {
 
 
     private Sport sport;
-    //Bisa dibuat object location mungkin
-    private String location;
+    private Location location;
     private Date date;
     private Users user1;
     private Users user2;
 
     //Constructor Schedule, pertama-tama cuma masukin user yang bikin, nanti pas matching kalo match ya masukin user2
-    public Schedule(Sport sport, String location, Date date, Users user1) {
+    public Schedule(Sport sport, Date date,Location location, Users user1) {
         this.sport = sport;
         this.location = location;
         this.date = date;
@@ -36,11 +35,11 @@ public class Schedule {
         this.sport = sport;
     }
 
-    public String getLocation() {
+    public Location getLocation() {
         return location;
     }
 
-    public void setLocation(String location) {
+    public void setLocation(Location location) {
         this.location = location;
     }
 
